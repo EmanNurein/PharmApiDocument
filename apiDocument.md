@@ -16,17 +16,17 @@
 # http://localhost:9700/pharmacy/?state_id=1
 # https://pharm-project.herokuapp.com/pharmacy/?state_id=1
 
-# List of categorytype
+# List of producttype
 
-# http://localhost:9700/categorytype
-# https://pharm-project.herokuapp.com/categorytype
+# http://localhost:9700/productType
+# https://pharm-project.herokuapp.com/productType
 
 # Page 2
 
-# List of pharmacy on basis of cateogry
+# List of pharmacy on basis of productTypes
 
-# http://localhost:9700/pharmacy/?category_id=2
-# https://pharm-project.herokuapp.com/pharmacy/?category_id=2
+# http://localhost:9700/pharmacy/?producttype_id=2
+# https://pharm-project.herokuapp.com/pharmacy/?producttype_id=2
 
 
 # page 3
