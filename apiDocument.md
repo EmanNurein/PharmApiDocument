@@ -5,36 +5,73 @@
 # https://localhost:9700/location
 # https://pharm-project.herokuapp.com/location 
      
-
 # List of pharmacy
 
 # http://localhost:9700/pharmacy
-# https://pharm-project.herokuapp.com/pharmacy
+# # https://pharm-project.herokuapp.com/pharmacy
+
 
 # List of pharmacy wrt to city
 
 # http://localhost:9700/pharmacy/?state_id=1
 # https://pharm-project.herokuapp.com/pharmacy/?state_id=1
 
-# List of producttype
+# List of productTypes
 
-# http://localhost:9700/productType
-# https://pharm-project.herokuapp.com/productType
+# http://localhost:9700/producttype
+# https://pharm-project.herokuapp.com/producttype
 
 # Page 2
 
-# List of pharmacy on basis of productTypes
+# List of pharmacy on basis of producttype
 
 # http://localhost:9700/pharmacy/?producttype_id=2
 # https://pharm-project.herokuapp.com/pharmacy/?producttype_id=2
+
+# pharmacy on basis of product selected
+# (POST) http://localhost:9700/product
+  (Body) [6]
+  [
+    {
+        "_id": "626688d2c7d11798ac3a956b",
+        "pharmacy_id": 2,
+        "pharmacy_name": "Almek Nimer Pharmacy",
+        "location_id": 2,
+        "state_id": 2,
+        "product_id": 6,
+        "address": "Amarat - Street No 15",
+        "pharmacy_image": "https://i.ibb.co/wJ1tPz2/service-cust.jpg",
+        "contact_number": "0912312312",
+        "productTypes": [
+            {
+                "producttype_id": 2,
+                "producttype_name": "Liquid"
+            },
+            {
+                "producttype_id": 4,
+                "producttype_name": "Capsule"
+            }
+        ],
+        "image_gallery": [
+            "https://i.ibb.co/7vJMw90/liquid-image.jpg",
+            "https://i.ibb.co/bXQrT8Y/capsule2.jpg"
+        ]
+    }
+]
+
+# Filter on basis of producttype
+# http://localhost:9700/filters/1?proId=1
+
+# Filter on basis of cost
+# http://localhost:9700/filters/3?$lcost=2000&hcost=3000
 
 
 # page 3
 
 # Details of Pharmacy
 
-# http://localhost:9700/details/62587ace0ad8026936c7bf69
-# https://pharm-project.herokuapp.com/details/6261bfaf7f2364ff455e1778
+# http://localhost:9700/details/626714df194a2cd99f34cecd
+# https://pharm-project.herokuapp.com/details/626714df194a2cd99f34cecd
 
 # Products on basis of pharmacy
 
@@ -86,7 +123,7 @@
 
 # Get order on basis of emailId
 
-# http://localhost:9700/viewOrder?emaileman@gmail.com
+# http://localhost:9700/viewOrder?email=eman@gmail.com
 # https://pharm-project.herokuapp.com/viewOrder/?eman@gmail.com
 
 # Update order
